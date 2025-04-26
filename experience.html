@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Experience</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+      .experience-card {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+      }
+      .experience-card.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .experience-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      }
+      .skill-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+      }
+      .skill-item {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="sidebar-nav">
+      <ul class="sidebar-links">
+        <li>
+          <a href="index.html#profile" class="sidebar-link" data-section="profile">
+            <i class="fas fa-home sidebar-icon"></i>
+          </a>
+        </li>
+        <li>
+          <a href="about.html" class="sidebar-link" data-section="about">
+            <i class="fas fa-user sidebar-icon"></i>
+          </a>
+        </li>
+        <li>
+          <a href="experience.html" class="sidebar-link active" data-section="experience">
+            <i class="fas fa-briefcase sidebar-icon"></i>
+          </a>
+        </li>
+        <li>
+          <a href="new-projects.html" class="sidebar-link" data-section="projects">
+            <i class="fas fa-code sidebar-icon"></i>
+          </a>
+        </li>
+        <li>
+          <a href="index.html#contact" class="sidebar-link" data-section="contact">
+            <i class="fas fa-envelope sidebar-icon"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="hamburger-btn" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav id="top-menu">
+      <ul class="menu-links">
+        <li><a href="index.html#profile" onclick="toggleMenu()">Home</a></li>
+        <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+        <li><a href="experience.html" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="new-projects.html" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+      </ul>
+    </nav>
+    <section id="experience-detail">
+      <h1 class="title">My Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container experience-card">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="skill-list">
+              <div class="skill-item">
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Bootstrap</h3>
+                  <p>Intermediate</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Tailwind</h3>
+                  <p>Intermediate</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="details-container color-container experience-card">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="skill-list">
+              <div class="skill-item">
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Mongoose</h3>
+                  <p>Intermediate</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>MongoDB</h3>
+                  <p>Basic</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="details-container color-container experience-card">
+            <h2 class="experience-sub-title">Miscellaneous</h2>
+            <div class="skill-list">
+              <div class="skill-item">
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Github</h3>
+                  <p>Experienced</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Git</h3>
+                  <p>Experienced</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Packet Tracer</h3>
+                  <p>Intermediate</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Windows</h3>
+                  <p>Intermediate</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Linux</h3>
+                  <p>Intermediate</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Computer Networks</h3>
+                  <p>Intermediate</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>Copyright © 2022 Shahbaz Khan. All Rights Reserved.</p>
+    </footer>
+    <button class="theme-toggle btn" id="theme-toggle" title="Toggle Theme" style="position: fixed; bottom: 1rem; right: 1rem;">
+      <span class="theme-icon">🌙</span>
+    </button>
+    <script src="script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const experienceCards = document.querySelectorAll(".experience-card");
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry, index) => {
+              if (entry.isIntersecting) {
+                setTimeout(() => {
+                  entry.target.classList.add("visible");
+                }, index * 200); // Staggered animation
+              }
+            });
+          },
+          { rootMargin: "0px", threshold: 0.1 }
+        );
+        experienceCards.forEach((card) => observer.observe(card));
+      });
+    </script>
+  <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9367d8e52fb5a809',t:'MTc0NTY4OTAzNy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
